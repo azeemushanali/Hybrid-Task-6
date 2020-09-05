@@ -10,9 +10,9 @@ resource "aws_db_instance" "mydb" {
   instance_class    = "db.t2.micro"
   allocated_storage = 10
 
-  name     = "aksdb"
-  username = "diyaksh"
-  password = "whoaks1234"
+  name     = "RDSDB"
+  username = "azeem"
+  password = "azeem123"
   port     = "3306"
   publicly_accessible = true
 
@@ -21,7 +21,7 @@ resource "aws_db_instance" "mydb" {
   parameter_group_name = "default.mysql5.7"
 
   tags = {
-      Name = "Akashi"
+      Name = "RDSins"
   }
 }
 
